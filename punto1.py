@@ -21,4 +21,4 @@ def simular_ejecucion(n):
         n=n*3+1
         ans.append(n)
 
-print(n)
+print(simular_ejecucion)
