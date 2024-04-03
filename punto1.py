@@ -14,11 +14,12 @@
 def simular_ejecucion(n):
     ans = []
     ans.append(n)
-    while n!=1:
-        if (n%2)==0:
-         n=n//2
-    else:
-        n=n*3+1
+    while 1 < n < 10 ** 6:
+        if (n % 2)== 0:
+            n= n // 2
+        else:
+            n=n*3+1
         ans.append(n)
-
-print(simular_ejecucion)
+    return ans
+print(simular_ejecucion(3))
+assert simular_ejecucion(3)==[3,10,5,16,8,4,2,1],"error en el caso de pureba"
